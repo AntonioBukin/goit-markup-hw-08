@@ -1,3 +1,5 @@
+//0px - 767px
+@media screen and (max-width: 767px) {        
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -7,20 +9,21 @@
     height: 100%;
     background-color: var(--white-color);
     transform: translateX(100%);
-    overflow: auto;
+    overflow: auto;}
 
-    @media screen and (min-width: 768px) {
-        display: none;   
-    }
+.mobile-menu__container {
+    position: relative;
+    padding-left: 40px;
 }
 
 .mobile-menu.is-open {
     transform: translateX(0);
 }
 
-.mobile-menu__container {
-    position: relative;
-    padding-left: 40px;
+.js-close-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
 }
 
 .mobile-nav {
@@ -136,30 +139,17 @@
     height: 40px;
 }
 
-.js-close-menu {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-}
-
 @media screen and (max-width: 767px) {
     .menu {
         display: none;
     }
 
     .contacts-list {
-        display: none;
-    }  
+        display: none;}  
+}
 }
 
-.open-mobile-menu-btn {
-    line-height: 0;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-}
-
-.open-mobile-menu-btn_icon {
-    width: 40px;
-    height: 40px;
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+    display: none;}
 }
