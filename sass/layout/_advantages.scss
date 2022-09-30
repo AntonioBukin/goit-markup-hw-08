@@ -1,4 +1,105 @@
-.advantages {
+//0px - 767px
+@media screen and (max-width: 767px) {
+    .advantages {
+        padding-top: 60px;
+        padding-bottom: 60px;}
+
+    .advantages-roster__title {
+        font-style: normal;
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: var(--text-title-color);}
+
+    .advantages-roster {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;}
+
+    .backgraund {
+        display: flex;
+        max-width: 450px;
+        background-color: var(--comandos-color);
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 4px;}
+}
+
+.backgraund__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.advantages-roster__text {
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+    .advantages {
+        padding-top: 60px;
+        padding-bottom: 60px;}
+
+    .advantages-roster {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;}
+
+    .backgraund {
+        display: flex;
+        max-width: 450px;
+        background-color: var(--comandos-color);
+        width: 354px;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 4px;}
+        
+    .advantages-roster__item {
+        width: calc((100% - 30px) / 2);}
+}
+
+@media screen and (min-width: 1200px) {
+    .advantages {
+        padding-top: 94px;
+        padding-bottom: 94px;}
+
+    .advantages-roster {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;}
+
+    .backgraund {
+        display: flex;
+        max-width: 450px;
+        background-color: var(--comandos-color);
+        width: 270px;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 4px;}
+
+    .advantages-roster__item {
+        width: calc((100% - 90px) / 4);}
+    
+}
+
+
+
+
+
+
+/*.advantages {
     padding-top: 94px;
 }
 
@@ -41,4 +142,4 @@
     font-style: normal;
     line-height: 1.71;
     color: var(--text-color);
-}
+}*/
