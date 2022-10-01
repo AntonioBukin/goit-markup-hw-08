@@ -1,4 +1,95 @@
-.section-clients {
+//0px - 767px
+@media screen and (max-width: 767px) {
+    .section-clients {
+        padding-top: 60px;
+        padding-bottom: 60px;}
+
+    .clients {
+        font-family: var(--primery-font);
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.84;
+        text-align: center;
+        color: var(--text-title-color);
+        margin-bottom: 30px;}
+
+    .clients-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;}
+
+    .clients-item {
+        width: calc((100% - 30px)/2);}
+}
+
+@media screen and (min-width: 768px) {
+    .section-clients {
+        padding-top: 60px;
+        padding-bottom: 60px;}
+
+    .clients {
+        margin-bottom: 50px;
+        font-family: var(--primery-font);
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.84;
+        text-align: center;
+        color: var(--text-title-color);}
+
+    .clients-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;}
+
+    .clients-item {
+        width: calc((100% - 60px)/3);}
+}
+
+@media screen and (min-width: 1200px) {
+    .section-clients {
+        padding-top: 94px;
+        padding-bottom: 94px;}
+
+    .clients {
+        margin-bottom: 50px;
+        font-family: var(--primery-font);
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.84;
+        text-align: center;
+        color: var(--text-title-color);}
+
+    .clients-item {
+        width: calc((100% - 150px)/6);}
+}
+
+.client-icon {
+    fill: currentColor;
+    width: 106px;
+    height: 60px;}
+
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    color: var(--icon-color);
+    transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);}
+ }
+
+/*.section-clients {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -30,4 +121,4 @@
     fill: currentColor;
     width: 106px;
     height: 60px;
-}
+}*/

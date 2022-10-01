@@ -1,3 +1,164 @@
+//0px - 767px
+@media screen and (max-width: 767px) {
+    .our-comandos {
+        padding-bottom: 60px;
+        padding-top: 60px;
+        background-color: var(--comandos-color);}
+
+    .comandos-team {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;}
+
+    .comandos-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17;
+        margin-bottom: 30px;
+        color: var(--text-title-color);}
+
+    .box-color {
+        background-color: var(--white-color);}
+
+    .work-position {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;}
+    
+    .social-list-icon {
+        width: 20px;
+        height: 20px;}
+    
+    .social-list,
+    .social-list-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;}
+    
+    .social-list-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        fill: var(--icon-color);
+        background-color: var(--white-color);
+        transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+    
+        &:hover,
+        &:focus {
+          fill: var(--white-color);
+          background-color: var(--accent-color);}
+        }
+    
+    .name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        margin-bottom: 10px;
+        color: var(--text-title-color);}
+    
+    .name-text {
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        color: var(--text-color);
+        margin-bottom: 16px;}
+}
+
+@media screen and (min-width: 768px) {
+    .our-comandos {
+        padding-bottom: 60px;
+        padding-top: 60px;
+        background-color: var(--comandos-color);}
+    
+    .comandos-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+        color: var(--text-title-color);}
+
+    .comandos-team {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 30px;}
+
+    .comandos-list {
+        width: calc((100% - 30px)/2);
+        text-align: center;
+        background-color: var(--white-color);
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .work-position {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;}
+
+    .social-list-icon {
+        width: 20px;
+        height: 20px;}
+
+    .social-list,
+    .social-list-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;}
+
+    .social-list-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        fill: var(--icon-color);
+        background-color: var(--white-color);
+        transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+    
+        &:hover,
+        &:focus {
+            fill: var(--white-color);
+            background-color: var(--accent-color);}}
+    
+    .name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        margin-bottom: 10px;
+        color: var(--text-title-color);}
+    
+    .name-text {
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        color: var(--text-color);
+        margin-bottom: 16px;}
+}
+
+@media screen and (min-width: 1200px) {
 .our-comandos {
     padding-bottom: 94px;
     padding-top: 94px;
@@ -9,8 +170,8 @@
     align-items: center;
 }
 
-.comandos-list:not(:last-child) {
-    margin-right: 30px;
+.comandos-list {
+    width: calc((100% - 90px)/4);
 }
 
 .box-color {
@@ -73,4 +234,5 @@
     text-align: center;
     color: var(--text-color);
     margin-bottom: 16px;
+}
 }
