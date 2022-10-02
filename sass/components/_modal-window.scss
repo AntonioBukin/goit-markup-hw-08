@@ -154,17 +154,29 @@
     font-family: var(--primery-font);
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
     line-height: 1, 16;
     letter-spacing: 0.01em;
+    font-size: 10px;
+
+@include mobile {
     font-size: 12px;}
+
+@include desktop {
+    font-size: 13px;}
+}
 
 .checkbox-text {
     color: var(--text-color);
     font-family: var(--primery-font);
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1, 16;
     letter-spacing: 0.01em;
+    
+@include mobile {
     font-size: 12px;}
+
+@include desktop {
+    font-size: 13px;}
+}
