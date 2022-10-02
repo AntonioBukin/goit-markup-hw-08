@@ -95,10 +95,10 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 30px;}
+        gap: 30px;
+        justify-content: center;}
 
     .comandos-list {
-        width: calc((100% - 30px)/2);
         text-align: center;
         background-color: var(--white-color);
         border-radius: 0px 0px 4px 4px;

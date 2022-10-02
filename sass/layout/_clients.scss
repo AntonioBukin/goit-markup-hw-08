@@ -1,4 +1,54 @@
-//0px - 767px
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;}
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+
+    @include desktop {
+        margin-top: 50px;}
+}
+
+.clients {
+    font-family: var(--primery-font);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.84;
+    text-align: center;
+    color: var(--text-title-color);
+    margin-bottom: 30px;
+}
+
+.client-icon {
+    fill: currentColor;
+    width: 106px;
+    height: 60px;
+}
+
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    color: var(--icon-color);
+    transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
+}
+
+/*//0px - 767px
 @media screen and (max-width: 767px) {
     .section-clients {
         padding-top: 60px;
@@ -87,4 +137,4 @@
     &:focus {
         border-color: var(--accent-color);
         color: var(--accent-color);}
- }
+ }*/
