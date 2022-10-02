@@ -150,5 +150,21 @@
 }
 
 .modal-form-own-text {
-    color:var(--accent-color)
-}
+    color:var(--accent-color);
+    font-family: var(--primery-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1, 16;
+    letter-spacing: 0.01em;
+    font-size: 12px;}
+
+.checkbox-text {
+    color: var(--text-color);
+    font-family: var(--primery-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1, 16;
+    letter-spacing: 0.01em;
+    font-size: 12px;}

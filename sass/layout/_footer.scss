@@ -1,4 +1,257 @@
-.footer-block {
+@media screen and (max-width: 320px) {
+    .mailing-input {
+        width: 200px;}
+
+    .footer-color {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background: var(--banner-color);
+        text-align: center;}
+    }
+
+//0px - 767px
+@media screen and (max-width: 767px) {
+    .footer-color {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background: var(--banner-color);
+        text-align: center;}
+
+    .footer-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;}
+
+    .mailing-input {
+        margin-bottom: 30px;}
+
+    .footer-social {
+        margin-top: 60px;}
+
+}
+
+@media screen and (min-width: 768px) {
+    .footer-color {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background: var(--banner-color);
+        text-align: center;}
+
+    .footer-block {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        align-items: center;}
+
+    .footer-tablet {
+        display: flex;
+        flex-direction: row;
+        gap: 165px;}
+
+    .mailing-input {
+        width: 450px;
+        margin-bottom: 30px;}
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-color {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background: var(--banner-color);
+        text-align: center;}
+
+    .footer-block {
+        flex-direction: row;
+        gap: 70px;
+        justify-content: center;
+        align-items: baseline;}
+
+    .footer-tablet {
+        display: flex;
+        flex-direction: row;
+        gap: 70px;}
+
+    .logo-web {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: var(--accent-color);
+        text-align: left;}
+
+    .footer-list {
+        text-align: left;}
+
+    .follow {
+        text-align: left;}
+
+    .mailing-text {
+        text-align: left;}
+
+    .mailing-input {
+        width: 358px;}
+
+    .mailing-box {
+         display: flex;
+         flex-direction: row;} 
+
+    .mailing-wrapper {
+        display: flex;
+        flex-direction: row;}
+}
+
+    .logo-indent {
+        margin-bottom: 20px;
+        display: block;}
+
+    .logo-footer {
+        color: var(--white-color);}
+
+    .logo-web {
+       font-family: 'Raleway', sans-serif;
+       font-weight: 700;
+       font-size: 26px;
+       line-height: 1.19;
+       letter-spacing: 0.03em;
+       color: var(--accent-color);}
+
+    .adress {
+        font-style: normal;
+        line-height: 1.71;
+        color: var(--white-color);}
+
+    .footer-list:not(:last-child) {
+        margin-bottom: 9px;}
+
+    .nav-contacts-footer {
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        line-height: 1.14;
+        color: var(--text-color);
+        transition: color 250ms var(--timing-function);
+    
+        &:hover,
+        &:focus,
+        .current {
+            color: var(--accent-color);}
+}
+
+    .nav-contacts-up {
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      line-height: 1.14;
+      color: var(--white-color);
+      transition: color 250ms var(--timing-function);
+
+      &:hover,
+      &:focus,
+      .current {
+          color: var(--accent-color);}
+}
+
+    .footer-contacts {
+      font-style: normal;
+      line-height: 1.71;
+      color: rgba(255, 255, 255, 0.6);}
+
+    .follow {
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      color: var(--white-color);}
+
+    .social-list-link-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: var(--bg-color-icon);
+      transition: background-color 250ms var(--timing-function);
+
+      &:hover,
+      &:focus {
+        background-color: var(--accent-color);}
+}
+
+    .social-list-icon-footer {
+      fill: var(--white-color);
+      width: 20px;
+      height: 20px;}
+
+    .mailing-box {
+        display: flex;
+        flex-direction: column;}
+
+    .mailing-text {
+      font-family: var(--primery-font);
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: var(--white-color);}
+
+    .mailing-send {
+        display: flex;
+        align-items: center;
+        justify-content: center;}
+
+    .icon-send {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;}
+
+    .mailing-input {
+      font-size: 100%;
+      height: 50px;
+      margin-right: 12px;
+      border-radius: 4px;
+      padding: 12px;
+      background-color: inherit;
+      color: var(--white-color);
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      transition: border-color 250ms var(--timing-function);
+
+      &:focus {
+        border-color: var(--white-color);
+        outline: none;
+    }
+}
+
+    .mailing-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      width: 200px;
+      height: 50px;
+      background-color: var(--accent-color);
+      border-radius: 4px;
+      color: var(--white-color);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1, 87;
+      letter-spacing: 0.06em;
+      padding: 10px 28px;
+      cursor: pointer;
+      transition: background-color 250ms var(--timing-function);
+
+      &:hover,
+      &:focus {
+        background-color: var(--accent-color);
+        color: var(--white-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+    }
+}
+
+/*.footer-block {
     display: flex;
     align-items: baseline;
 }
@@ -144,3 +397,13 @@
     height: 24px;
     margin-left: 10px;
 }
+
+.logo-footer {
+    color: var(--white-color);
+}
+
+.logo-indent {
+    margin-bottom: 20px;
+    display: block;
+}
+*/

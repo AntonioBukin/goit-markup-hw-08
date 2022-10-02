@@ -1,5 +1,4 @@
 .container {
-    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -14,14 +13,13 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 738px;
+        width: 768px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .container {
-        width: 1200px;
-    }
+        width: 1200px;}
 }
 
 //.container {
