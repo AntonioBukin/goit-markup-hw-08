@@ -39,7 +39,20 @@
             </li>
           </ul>
         </nav>
-        <ul class="list adress contacts-list">
+        <button
+          type="button"
+          class="open-mobile-menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="open-mobile-menu-btn_icon"
+            aria-label="кнопка мобільного меню"
+          >
+            <use href="./images/sprite.svg#icon-menu_mob"></use>
+          </svg>
+        </button>
+        <ul class="list contacts-list">
           <li class="contacts-list__item">
             <a
               class="contacts-list__link link"
@@ -71,10 +84,76 @@
           </li>
         </ul>
       </div>
+      <!--Mobile-menu-->
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn js-close-menu">
+            <svg
+              aria-label="кнопка закриття мобільного меню"
+              class="mobile-menu__close-icon"
+            >
+              <use href="./images/sprite.svg#icon-backdrop-btn"></use>
+            </svg>
+          </button>
+          <ul class="mobile-nav list">
+            <li class="mobile-nav__item">
+              <a
+                class="link mobile-nav__link mobile-nav__link"
+                href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a class="link mobile-nav__link current" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a class="link mobile-nav__link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-contacts list link">
+            <li>
+              <a href="tel:+380961111111" class="link mobile-contacts__link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="link mobile-contacts__link mobile-contacts__link--size"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social list link">
+            <li class="mobile-social__item">
+              <a class="link mobile-social_teg mobile-social__link href=#"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-social__item">
+              <a class="link mobile-social_teg mobile-social__link href=#"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-social__item">
+              <a class="link mobile-social_teg mobile-social__link href=#"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-social__item">
+              <a class="link mobile-social_teg mobile-social__link href=#"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <!--Button-filter-portfolio-->
-      <!--<section class="portfolio">
+      <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="portfolio-btn-roster list">
@@ -93,9 +172,9 @@
             <li class="portfolio-item">
               <button type="button" class="button-portfolio">Маркетинг</button>
             </li>
-          </ul>-->
+          </ul>
           <!--Portfolio-->
-          <!--<ul class="portfolio-work list">
+          <ul class="portfolio-work list">
             <li class="port-box">
               <a class="port-link link" href="">
                 <div class="portfolio-block">
@@ -524,9 +603,9 @@
           </ul>
         </div>
       </section>
-    </main>-->
+    </main>
     <!--Footer-->
-    <!--<footer class="footer-color">
+    <footer class="footer-color">
       <div class="container footer-block">
         <div class="contacts-footer">
           <a class="logo link logo-indent" href="./index.html" lang="en"
@@ -628,6 +707,6 @@
           </div>
         </form>
       </div>
-    </footer>-->
+    </footer>
   </body>
 </html>
