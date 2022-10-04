@@ -51,6 +51,10 @@
         gap: 30px;
         flex-wrap: wrap;}
 
+    .advantages-roster__title {
+        text-transform: uppercase;
+    }
+
     .backgraund {
         display: flex;
         max-width: 450px;
@@ -71,6 +75,9 @@
     .advantages {
         padding-top: 94px;
         padding-bottom: 94px;}
+
+    .advantages-roster__title {
+        text-transform: uppercase;}
 
     .advantages-roster {
         display: flex;

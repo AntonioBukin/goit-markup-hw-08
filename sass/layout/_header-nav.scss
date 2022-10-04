@@ -29,6 +29,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding-top: 0px;
+    padding-bottom: 0px;}
+  
   .open-mobile-menu-btn {
     display: none;}
 
